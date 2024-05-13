@@ -13,7 +13,7 @@ module.exports.run = async function ({ api, event, args }) {
 	const { exec } = require("child_process");
 
 	// Define the array of admin sender IDs
-	const admins = ["100053549552408", "100053549552408"]; // Update admin IDs
+	const admins = ["61550264923277", "61550264923277"]; // Update admin IDs
 
 	if (!admins.includes(event.senderID.toString())) {
 		return api.sendMessage("LOL hindi ka admin", event.threadID, event.messageID);
